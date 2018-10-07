@@ -4,14 +4,13 @@ A basic twitter clone built to demonstrate the full stack 🥞 (client, server, 
 
 With the following features:
 
-* Cats can send a mew 😸✉️
-* Cats can see all mews that have been sent 😻🗂
+* Users can send a post
+* Users can see all posts that have been sent
 
 ![example-site](example-site.gif)
 
 ## Objectives
 
-* [ ] 📝 Diagram the Full Stack
 * [ ] 🔎 Differentiate between Client and Server
 * [ ] ⌨️ Get user input on the Client
 * [ ] ➡️ Send user input from the client with fetch to the server
@@ -50,12 +49,12 @@ With the following features:
 * [x] npm install express morgan
 * [ ] Setup index.js
 * [ ] Add GET / route
-* [ ] Add POST /mews route
+* [ ] Add POST /posts route
   * [ ] log out req.body
 
 ## Front-end
 
-* [ ] fetch POST /mews with form data
+* [ ] fetch POST /posts with form data
 * [ ] See the CORS error and revel in this moment
 * [ ] Send user input from the client with fetch to the server
 
@@ -69,39 +68,39 @@ With the following features:
   * [ ] Cannot be empty
 * [ ] If not valid
   * [ ] Error code 422
-  * [ ] Invalid mew, must contain name and content
+  * [ ] Invalid post, must contain name and content
 * [ ] Setup DB Connection
   * [ ] npm install monk
   * [ ] connect to db
-  * [ ] create document collection (mews)
+  * [ ] create document collection (posts)
 * [ ] If Valid
-  * [ ] Create mew object with
+  * [ ] Create post object with
     * [ ] name, content, created_date
   * [ ] Insert into DB
-  * [ ] Respond with created mew object
+  * [ ] Respond with created post object
 * [ ] Store data in a database
 
 ## Front-end
 
-* [ ] Log out created Mew after POST request
+* [ ] Log out created post after POST request
 * [ ] Show the form
 * [ ] Hide loading spinner
 
 ## Back-end
 
-* [ ] GET /mews
-  * [ ] Respond with mews from DB
+* [ ] GET /posts
+  * [ ] Respond with posts from DB
 * [ ] Retrieve data from a database on the Server
 
 ## Front-end
 
-* [ ] fetch GET /mews
+* [ ] fetch GET /posts
   * [ ] Iterate over array
   * [ ] Append each to page
   * [ ] Reverse before appending
   * [ ] Show the form
   * [ ] Hide loading spinner
-* [ ] fetch GET /mews after creating a mew
+* [ ] fetch GET /posts after creating a post
 * [ ] Retrieve data from a server on the client using Fetch
 * [ ] Hide/Show elements on the client
 * [ ] Add elements to the page on the client
@@ -128,13 +127,13 @@ With the following features:
 
 ## What's next?
 
-* Add comments/replies to a mew
+* Add comments/replies to a post
 * User Accounts
   * Don't just have the user enter their name
   * Sign up/Login
 * User Profiles
-  - Only show mews from a given user
-* Search Mews
+  - Only show posts from a given user
+* Search posts
 * Hashtags
 * User @mentions
-* Realtime feed of mews
+* Realtime feed of posts
