@@ -1,4 +1,4 @@
-# Meower - Twitter for Cats
+# Fullstack Twitter Clone
 
 A basic twitter clone built to demonstrate the full stack 🥞 (client, server, database).
 
@@ -7,7 +7,6 @@ With the following features:
 * Users can send a post
 * Users can see all posts that have been sent
 
-![example-site](example-site.gif)
 
 ## Objectives
 
