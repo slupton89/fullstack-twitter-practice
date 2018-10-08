@@ -7,8 +7,6 @@ const { MONGODB_URI } = require('./config');
 const db = monk(MONGODB_URI);
 const posts = db.get('posts');
 
-console.log(MONGODB_URI);
-
 app.use(cors());
 app.use(express.json());
 
@@ -18,6 +16,15 @@ app.get('/', (req, res) => {
   })
 })
 
+// GET all posts
+app.get('/posts', (req, res) => {
+  posts
+    .find()
+    .then(posts => {
+      res.json(posts);
+    });
+});
+
 function isValidPost(post) {
   return post.name && post.name.toString().trim() !== '' &&
     post.content && post.content.toString().trim() !== '';
@@ -25,12 +32,12 @@ function isValidPost(post) {
 
 app.post('/posts', (req, res) => {
   if(isValidPost(req.body)) {
-    //insert into db
     const post = {
-      name: req.body.toString(),
-      content: req.body.toString()
+      name: req.body.name.toString(),
+      content: req.body.content.toString(),
+      created: new Date()
     };
-
+    //insert into db
     posts
       .insert(post)
       .then(createdPost => {
@@ -45,6 +52,7 @@ app.post('/posts', (req, res) => {
   }
 })
 
+//start server
 app.listen(5000, () => {
   console.log('Listening on http://localhost:5000')
 });

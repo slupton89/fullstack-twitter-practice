@@ -25,5 +25,11 @@ form.addEventListener('submit', event => {
     headers: {
       'content-type': 'application/json'
     }
-  })
+  }).then(response => response.json())
+    .then(createdPost => {
+      console.log(createdPost);
+      form.reset();
+      form.style.display = '';
+      loadingElement.style.display = 'none';
+    })
 });

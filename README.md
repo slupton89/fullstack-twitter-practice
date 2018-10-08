@@ -81,15 +81,15 @@ With the following features:
 
 ## Front-end
 
-* [ ] Log out created post after POST request
-* [ ] Show the form
-* [ ] Hide loading spinner
+* [x] Log out created post after POST request
+* [x] Show the form
+* [x] Hide loading spinner
 
 ## Back-end
 
-* [ ] GET /posts
-  * [ ] Respond with posts from DB
-* [ ] Retrieve data from a database on the Server
+* [x] GET /posts
+  * [x] Respond with posts from DB
+* [x] Retrieve data from a database on the Server
 
 ## Front-end
 
