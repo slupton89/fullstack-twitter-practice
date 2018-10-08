@@ -55,29 +55,29 @@ With the following features:
 
 * [x] fetch POST /posts with form data
 * [x] See the CORS error and revel in this moment
-* [ ] Send user input from the client with fetch to the server
+* [x] Send user input from the client with fetch to the server
 
 ## Back-end
 
-* [ ] npm install cors
-* [ ] Make sure the server is recieving the data
-* [ ] Add JSON body parser middleware
-* [ ] Validate name and content
-  * [ ] Must be a string
-  * [ ] Cannot be empty
-* [ ] If not valid
-  * [ ] Error code 422
-  * [ ] Invalid post, must contain name and content
-* [ ] Setup DB Connection
-  * [ ] npm install monk
-  * [ ] connect to db
-  * [ ] create document collection (posts)
-* [ ] If Valid
-  * [ ] Create post object with
-    * [ ] name, content, created_date
-  * [ ] Insert into DB
-  * [ ] Respond with created post object
-* [ ] Store data in a database
+* [x] npm install cors
+* [x] Make sure the server is recieving the data
+* [x] Add JSON body parser middleware
+* [x] Validate name and content
+  * [x] Must be a string
+  * [x] Cannot be empty
+* [x] If not valid
+  * [x] Error code 422
+  * [x] Invalid post, must contain name and content
+* [x] Setup DB Connection
+  * [x] npm install monk
+  * [x] connect to db
+  * [x] create document collection (posts)
+* [x] If Valid
+  * [x] Create post object with
+    * [x] name, content, created_date
+  * [x] Insert into DB
+  * [x] Respond with created post object
+* [x] Store data in a database
 
 ## Front-end
 

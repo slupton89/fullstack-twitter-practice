@@ -1,6 +1,13 @@
 const express = require('express');
 const cors = require('cors');
+const monk = require('monk');
+
 const app = express();
+const { MONGODB_URI } = require('./config');
+const db = monk(MONGODB_URI);
+const posts = db.get('posts');
+
+console.log(MONGODB_URI);
 
 app.use(cors());
 app.use(express.json());
@@ -19,6 +26,17 @@ function isValidPost(post) {
 app.post('/posts', (req, res) => {
   if(isValidPost(req.body)) {
     //insert into db
+    const post = {
+      name: req.body.toString(),
+      content: req.body.toString()
+    };
+
+    posts
+      .insert(post)
+      .then(createdPost => {
+        res.json(createdPost);
+      });
+
   } else {
     res.status(422)
     res.json({
