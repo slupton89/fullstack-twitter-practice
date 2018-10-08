@@ -7,20 +7,21 @@ With the following features:
 * Users can send a post
 * Users can see all posts that have been sent
 
+[Live build](https://twit.now.sh/)
 
 ## Objectives
 
-* [ ] 🔎 Differentiate between Client and Server
-* [ ] ⌨️ Get user input on the Client
-* [ ] ➡️ Send user input from the client with fetch to the server
-* [ ] 🗃 Store data in a database
-* [ ] 🔍 Retrieve data from a database on the Server
-* [ ] ⬅️ Retrieve data from a server on the client using Fetch
-* [ ] 🙈 Hide/Show elements on the client
-* [ ] ✨ Add elements to the page on the client
-* [ ] 🚀 Deploy the client with now.sh
-* [ ] 🚀 Deploy the database with mlab
-* [ ] 🚀 Deploy the server with now.sh
+* [✔️] 🔎 Differentiate between Client and Server
+* [✔️] ⌨️ Get user input on the Client
+* [✔️] ➡️ Send user input from the client with fetch to the server
+* [✔️] 🗃 Store data in a database
+* [✔️] 🔍 Retrieve data from a database on the Server
+* [✔️] ⬅️ Retrieve data from a server on the client using Fetch
+* [✔️] 🙈 Hide/Show elements on the client
+* [✔️] ✨ Add elements to the page on the client
+* [✔️] 🚀 Deploy the client with now.sh
+* [✔️] 🚀 Deploy the database with mlab
+* [✔️] 🚀 Deploy the server with now.sh
 
 ## Front-end
 
