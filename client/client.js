@@ -2,7 +2,7 @@
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const postsElement = document.querySelector('.posts');
-const API_URL = 'http://localhost:5000/posts';
+const API_URL = 'https://twit-api.now.sh/posts';
 
 loadingElement.style.display = 'none';
 

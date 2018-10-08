@@ -106,23 +106,23 @@ With the following features:
 
 ## Back-end
 
-* [ ] npm install bad-words
-  * [ ] Use filter before inserting into DB
-* [ ] npm install express-rate-limit
-  * [ ] Limit to 1 request every 15 seconds
+* [x] npm install bad-words
+  * [x] Use filter before inserting into DB
+* [x] npm install express-rate-limit
+  * [x] Limit to 1 request every 15 seconds
 
 ## Deploy
 
-* [ ] Deploy server with now
-  * [ ] Setup environment variables
-    * [ ] Database connection
+* [x] Deploy server with now
+  * [x] Setup environment variables
+    * [x] Database connection
       * process.env.MONGO_URI
-  * [ ] Show mlab
-  * [ ] Deploy with environment variable
+  * [x] Show mlab
+  * [x] Deploy with environment variable
     * now -e MONGO_URI=@meower-db
-  * [ ] Add alias
-* [ ] Deploy client folder with now
-  * [ ] Set API_URL based on hostname
+  * [x] Add alias
+* [x] Deploy client folder with now
+  * [x] Set API_URL based on hostname
 
 ## What's next?
 
