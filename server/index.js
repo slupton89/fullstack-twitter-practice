@@ -1,14 +1,18 @@
 const express = require('express');
 const cors = require('cors');
 const monk = require('monk');
+const Filter = require('bad-words');
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 const { MONGODB_URI } = require('./config');
 const db = monk(MONGODB_URI);
 const posts = db.get('posts');
+const filter = new Filter();
 
 app.use(cors());
 app.use(express.json());
+
 
 app.get('/', (req, res) => {
   res.json({
@@ -30,11 +34,16 @@ function isValidPost(post) {
     post.content && post.content.toString().trim() !== '';
 }
 
+app.use(rateLimit({
+  windowMs: 30 * 1000,
+  max: 1
+}))
+
 app.post('/posts', (req, res) => {
   if(isValidPost(req.body)) {
     const post = {
-      name: req.body.name.toString(),
-      content: req.body.content.toString(),
+      name: filter.clean(req.body.name.toString()),
+      content: filter.clean(req.body.content.toString()),
       created: new Date()
     };
     //insert into db

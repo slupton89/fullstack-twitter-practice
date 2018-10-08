@@ -31,7 +31,9 @@ form.addEventListener('submit', event => {
   }).then(response => response.json())
     .then(createdPost => {
       form.reset();
-      form.style.display = '';
+      setTimeout(() => {
+        form.style.display = '';
+      }, 30000);
       listAllPosts();
     })
 });
