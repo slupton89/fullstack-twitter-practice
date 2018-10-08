@@ -93,16 +93,16 @@ With the following features:
 
 ## Front-end
 
-* [ ] fetch GET /posts
-  * [ ] Iterate over array
-  * [ ] Append each to page
-  * [ ] Reverse before appending
-  * [ ] Show the form
-  * [ ] Hide loading spinner
-* [ ] fetch GET /posts after creating a post
-* [ ] Retrieve data from a server on the client using Fetch
-* [ ] Hide/Show elements on the client
-* [ ] Add elements to the page on the client
+* [x] fetch GET /posts
+  * [x] Iterate over array
+  * [x] Append each to page
+  * [x] Reverse before appending
+  * [x] Show the form
+  * [x] Hide loading spinner
+* [x] fetch GET /posts after creating a post
+* [x] Retrieve data from a server on the client using Fetch
+* [x] Hide/Show elements on the client
+* [x] Add elements to the page on the client
 
 ## Back-end
 
