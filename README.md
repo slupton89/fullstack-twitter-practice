@@ -48,13 +48,13 @@ With the following features:
 * [x] npm install express morgan
 * [x] Setup index.js
 * [x] Add GET / route
-* [ ] Add POST /posts route
-  * [ ] log out req.body
+* [x] Add POST /posts route
+  * [x] log out req.body
 
 ## Front-end
 
-* [ ] fetch POST /posts with form data
-* [ ] See the CORS error and revel in this moment
+* [x] fetch POST /posts with form data
+* [x] See the CORS error and revel in this moment
 * [ ] Send user input from the client with fetch to the server
 
 ## Back-end
